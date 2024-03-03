@@ -31,12 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             panel1 = new Panel();
             label4 = new Label();
-            linkLabel1 = new LinkLabel();
+            linkSignUp = new LinkLabel();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
+            txtUsername = new TextBox();
+            txtPassword = new TextBox();
             pictureBox1 = new PictureBox();
             button2 = new Button();
             button1 = new Button();
@@ -48,12 +48,12 @@
             // 
             panel1.BackColor = Color.FromArgb(37, 40, 76);
             panel1.Controls.Add(label4);
-            panel1.Controls.Add(linkLabel1);
+            panel1.Controls.Add(linkSignUp);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label1);
-            panel1.Controls.Add(textBox2);
-            panel1.Controls.Add(textBox1);
+            panel1.Controls.Add(txtUsername);
+            panel1.Controls.Add(txtPassword);
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(button2);
             panel1.Controls.Add(button1);
@@ -73,17 +73,17 @@
             label4.TabIndex = 9;
             label4.Text = "Do you want to";
             // 
-            // linkLabel1
+            // linkSignUp
             // 
-            linkLabel1.AutoSize = true;
-            linkLabel1.LinkColor = Color.FromArgb(255, 255, 192);
-            linkLabel1.Location = new Point(1112, 551);
-            linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(68, 25);
-            linkLabel1.TabIndex = 8;
-            linkLabel1.TabStop = true;
-            linkLabel1.Text = "Signup";
-            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
+            linkSignUp.AutoSize = true;
+            linkSignUp.LinkColor = Color.FromArgb(255, 255, 192);
+            linkSignUp.Location = new Point(1112, 551);
+            linkSignUp.Name = "linkSignUp";
+            linkSignUp.Size = new Size(68, 25);
+            linkSignUp.TabIndex = 8;
+            linkSignUp.TabStop = true;
+            linkSignUp.Text = "Signup";
+            linkSignUp.LinkClicked += linkSignUp_LinkClicked;
             // 
             // label3
             // 
@@ -119,23 +119,23 @@
             label1.TabIndex = 5;
             label1.Text = "Name";
             // 
-            // textBox2
+            // txtUsername
             // 
-            textBox2.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(859, 245);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(432, 56);
-            textBox2.TabIndex = 4;
+            txtUsername.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtUsername.Location = new Point(859, 245);
+            txtUsername.Multiline = true;
+            txtUsername.Name = "txtUsername";
+            txtUsername.Size = new Size(432, 56);
+            txtUsername.TabIndex = 4;
             // 
-            // textBox1
+            // txtPassword
             // 
-            textBox1.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(859, 361);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(432, 56);
-            textBox1.TabIndex = 3;
+            txtPassword.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtPassword.Location = new Point(859, 361);
+            txtPassword.Multiline = true;
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(432, 56);
+            txtPassword.TabIndex = 3;
             // 
             // pictureBox1
             // 
@@ -158,7 +158,6 @@
             button2.TabIndex = 1;
             button2.Text = "EXIT";
             button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
             // 
             // button1
             // 
@@ -199,12 +198,12 @@
         private Button button1;
         private PictureBox pictureBox1;
         private Button button2;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox txtUsername;
+        private TextBox txtPassword;
         private Label label2;
         private Label label1;
         private Label label3;
         private Label label4;
-        private LinkLabel linkLabel1;
+        private LinkLabel linkSignUp;
     }
 }

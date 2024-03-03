@@ -14,7 +14,7 @@ namespace SalesSystem
 
         public DbConnect()
         {
-            connectionString = "Data Source=DESKTOP-SEM7QMC\\SQLEXPRESS;Initial Catalog=SalesSystem;Persist Security Info=True;User ID=smartenduser;Password=l0l0t1ng@2209;TrustServerCertificate=True;";
+            connectionString = "Data Source=DESKTOP-SEM7QMC\\SQLEXPRESS;Initial Catalog=poultryManagement;Persist Security Info=True;User ID=smartenduser;Password=l0l0t1ng@2209;TrustServerCertificate=True;";
             connection = new SqlConnection(connectionString);
         }
 

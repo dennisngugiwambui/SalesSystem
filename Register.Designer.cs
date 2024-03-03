@@ -147,7 +147,7 @@
             // 
             // button3
             // 
-            button3.BackColor = Color.Maroon;
+            button3.BackColor = Color.Blue;
             button3.ForeColor = Color.White;
             button3.Location = new Point(667, 463);
             button3.Name = "button3";
