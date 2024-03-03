@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             panel1 = new Panel();
+            label4 = new Label();
+            linkLabel1 = new LinkLabel();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
@@ -44,6 +46,8 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(label4);
+            panel1.Controls.Add(linkLabel1);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label1);
@@ -57,6 +61,27 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1332, 609);
             panel1.TabIndex = 0;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.ForeColor = Color.FromArgb(64, 0, 64);
+            label4.Location = new Point(980, 551);
+            label4.Name = "label4";
+            label4.Size = new Size(136, 25);
+            label4.TabIndex = 9;
+            label4.Text = "Do you want to";
+            // 
+            // linkLabel1
+            // 
+            linkLabel1.AutoSize = true;
+            linkLabel1.Location = new Point(1112, 551);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(68, 25);
+            linkLabel1.TabIndex = 8;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "Signup";
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
             // label3
             // 
@@ -125,19 +150,20 @@
             button2.BackColor = Color.FromArgb(0, 0, 192);
             button2.Font = new Font("Yu Gothic UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button2.ForeColor = SystemColors.ButtonHighlight;
-            button2.Location = new Point(651, 492);
+            button2.Location = new Point(709, 464);
             button2.Name = "button2";
             button2.Size = new Size(200, 53);
             button2.TabIndex = 1;
-            button2.Text = "REGISTER";
+            button2.Text = "EXIT";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // button1
             // 
             button1.BackColor = Color.Maroon;
             button1.Font = new Font("Yu Gothic UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = SystemColors.ButtonHighlight;
-            button1.Location = new Point(1091, 492);
+            button1.Location = new Point(1091, 464);
             button1.Name = "button1";
             button1.Size = new Size(200, 53);
             button1.TabIndex = 0;
@@ -150,8 +176,10 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1332, 609);
+            ControlBox = false;
             Controls.Add(panel1);
             ForeColor = Color.Chocolate;
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "Form1";
@@ -174,5 +202,7 @@
         private Label label2;
         private Label label1;
         private Label label3;
+        private Label label4;
+        private LinkLabel linkLabel1;
     }
 }

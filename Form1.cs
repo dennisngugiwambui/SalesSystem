@@ -9,21 +9,21 @@ namespace SalesSystem
 
 {
     public partial class Form1 : Form
-{
-
-    public static string? CurrentUser { get; private set; }
-
-    //SqlDataReader sdr;
-    DbConnect dbConnect = new DbConnect();
-    public Form1()
-    {
-        InitializeComponent();
-    }
-
-    private void label2_Click(object sender, EventArgs e)
     {
 
-    }
+        public static string? CurrentUser { get; private set; }
+
+        //SqlDataReader sdr;
+        DbConnect dbConnect = new DbConnect();
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -33,8 +33,8 @@ namespace SalesSystem
             // Verify username and password and check if the user is active
             if (VerifyCredentials(username, password))
             {
-                Register register = new Register();
-                register.Show();
+                Dashboard dashboard = new Dashboard();
+                dashboard.Show();
 
                 this.Hide();
             }
@@ -58,5 +58,18 @@ namespace SalesSystem
             return count > 0;
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Exit Application", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                Application.Exit();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Register register = new Register();
+            register.Show();
+
+            this.Hide();
+        }
     }
 }
