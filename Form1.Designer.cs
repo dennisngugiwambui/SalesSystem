@@ -46,6 +46,7 @@
             // 
             // panel1
             // 
+            panel1.BackColor = Color.FromArgb(37, 40, 76);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(linkLabel1);
             panel1.Controls.Add(label3);
@@ -65,7 +66,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.ForeColor = Color.FromArgb(64, 0, 64);
+            label4.ForeColor = Color.FromArgb(255, 255, 128);
             label4.Location = new Point(980, 551);
             label4.Name = "label4";
             label4.Size = new Size(136, 25);
@@ -75,6 +76,7 @@
             // linkLabel1
             // 
             linkLabel1.AutoSize = true;
+            linkLabel1.LinkColor = Color.FromArgb(255, 255, 192);
             linkLabel1.Location = new Point(1112, 551);
             linkLabel1.Name = "linkLabel1";
             linkLabel1.Size = new Size(68, 25);
@@ -98,7 +100,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Sitka Text", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = SystemColors.ActiveCaptionText;
+            label2.ForeColor = Color.Transparent;
             label2.Location = new Point(660, 361);
             label2.Name = "label2";
             label2.Size = new Size(193, 52);
@@ -110,8 +112,8 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Sitka Text", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = SystemColors.ActiveCaptionText;
-            label1.Location = new Point(728, 249);
+            label1.ForeColor = Color.Transparent;
+            label1.Location = new Point(660, 243);
             label1.Name = "label1";
             label1.Size = new Size(123, 52);
             label1.TabIndex = 5;
@@ -179,7 +181,7 @@
             ControlBox = false;
             Controls.Add(panel1);
             ForeColor = Color.Chocolate;
-            FormBorderStyle = FormBorderStyle.FixedSingle;
+            FormBorderStyle = FormBorderStyle.None;
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "Form1";
