@@ -74,7 +74,7 @@ namespace SalesSystem
 
                     if (_usertype == "farmer")
                     {
-                        MessageBox.Show("Access Granted! Welcome " + _name, "ACCESS GRANTED", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        //MessageBox.Show("Access Granted! Welcome " + _name, "ACCESS GRANTED", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                         PopupNotifier popupNotifier = new PopupNotifier();
                         popupNotifier.Image = Properties.Resources.success;
@@ -101,7 +101,13 @@ namespace SalesSystem
                 }
                 else
                 {
-                    MessageBox.Show("Invalid Username or Password", "ACCESS DENIED", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                   // MessageBox.Show("Invalid Username or Password", "ACCESS DENIED", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                    PopupNotifier popupNotifier = new PopupNotifier();
+                    popupNotifier.Image = Properties.Resources.error;
+                    popupNotifier.TitleText = "ACCESS DENIED";
+                    popupNotifier.ContentText = "Invalid Username or Password";
+                    popupNotifier.Popup();
                 }
             }
             catch (Exception ex)
