@@ -31,6 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             panel1 = new Panel();
             panel7 = new Panel();
+            button3 = new Button();
+            button2 = new Button();
+            button1 = new Button();
             btnLogout = new Button();
             btnChicken = new Button();
             btnProfile = new Button();
@@ -40,39 +43,36 @@
             Welcome = new Label();
             pictureBox1 = new PictureBox();
             panel5 = new Panel();
-            panel4 = new Panel();
-            panel3 = new Panel();
-            panel2 = new Panel();
-            pictureBox2 = new PictureBox();
-            pictureBox3 = new PictureBox();
-            pictureBox4 = new PictureBox();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            label7 = new Label();
-            label8 = new Label();
             dataGridView1 = new DataGridView();
             id = new DataGridViewTextBoxColumn();
             NumberOfChickens = new DataGridViewTextBoxColumn();
             date = new DataGridViewTextBoxColumn();
             comments = new DataGridViewTextBoxColumn();
+            panel4 = new Panel();
+            label6 = new Label();
+            label3 = new Label();
+            label2 = new Label();
+            pictureBox2 = new PictureBox();
+            panel3 = new Panel();
+            label7 = new Label();
+            label4 = new Label();
+            pictureBox3 = new PictureBox();
+            panel2 = new Panel();
+            label8 = new Label();
+            label5 = new Label();
+            pictureBox4 = new PictureBox();
             panel1.SuspendLayout();
             panel7.SuspendLayout();
             panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel5.SuspendLayout();
-            panel4.SuspendLayout();
-            panel3.SuspendLayout();
-            panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -87,7 +87,7 @@
             panel1.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1759, 750);
+            panel1.Size = new Size(1759, 753);
             panel1.TabIndex = 0;
             // 
             // panel7
@@ -104,6 +104,45 @@
             panel7.Name = "panel7";
             panel7.Size = new Size(236, 574);
             panel7.TabIndex = 4;
+            // 
+            // button3
+            // 
+            button3.BackColor = Color.FromArgb(32, 35, 68);
+            button3.ForeColor = Color.Transparent;
+            button3.Image = Properties.Resources.chicken1;
+            button3.ImageAlign = ContentAlignment.MiddleLeft;
+            button3.Location = new Point(0, 377);
+            button3.Name = "button3";
+            button3.Size = new Size(220, 46);
+            button3.TabIndex = 8;
+            button3.Text = "Earnings";
+            button3.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.FromArgb(32, 35, 68);
+            button2.ForeColor = Color.Transparent;
+            button2.Image = Properties.Resources.chicken1;
+            button2.ImageAlign = ContentAlignment.MiddleLeft;
+            button2.Location = new Point(3, 310);
+            button2.Name = "button2";
+            button2.Size = new Size(220, 46);
+            button2.TabIndex = 7;
+            button2.Text = "Eggs";
+            button2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.FromArgb(32, 35, 68);
+            button1.ForeColor = Color.Transparent;
+            button1.Image = Properties.Resources.chicken1;
+            button1.ImageAlign = ContentAlignment.MiddleLeft;
+            button1.Location = new Point(0, 242);
+            button1.Name = "button1";
+            button1.Size = new Size(220, 46);
+            button1.TabIndex = 6;
+            button1.Text = "Chicks";
+            button1.UseVisualStyleBackColor = false;
             // 
             // btnLogout
             // 
@@ -144,6 +183,7 @@
             btnProfile.TabIndex = 3;
             btnProfile.Text = "Profile";
             btnProfile.UseVisualStyleBackColor = false;
+            btnProfile.Click += btnProfile_Click;
             // 
             // btnDashboard
             // 
@@ -211,180 +251,6 @@
             panel5.Size = new Size(1505, 592);
             panel5.TabIndex = 3;
             // 
-            // panel4
-            // 
-            panel4.BackColor = Color.FromArgb(45, 49, 93);
-            panel4.Controls.Add(label6);
-            panel4.Controls.Add(label3);
-            panel4.Controls.Add(label2);
-            panel4.Controls.Add(pictureBox2);
-            panel4.Location = new Point(383, 12);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(319, 122);
-            panel4.TabIndex = 2;
-            // 
-            // panel3
-            // 
-            panel3.BackColor = Color.FromArgb(45, 49, 93);
-            panel3.Controls.Add(label7);
-            panel3.Controls.Add(label4);
-            panel3.Controls.Add(pictureBox3);
-            panel3.Location = new Point(843, 12);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(319, 122);
-            panel3.TabIndex = 1;
-            // 
-            // panel2
-            // 
-            panel2.BackColor = Color.FromArgb(45, 49, 93);
-            panel2.Controls.Add(label8);
-            panel2.Controls.Add(label5);
-            panel2.Controls.Add(pictureBox4);
-            panel2.Location = new Point(1354, 12);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(319, 122);
-            panel2.TabIndex = 0;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = Properties.Resources.chicken__2_;
-            pictureBox2.Location = new Point(14, 6);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(110, 88);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 0;
-            pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.Image = Properties.Resources.chicken__1_;
-            pictureBox3.Location = new Point(3, 6);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(111, 91);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 1;
-            pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.Image = Properties.Resources.earnings;
-            pictureBox4.Location = new Point(3, 6);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(111, 85);
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.TabIndex = 2;
-            pictureBox4.TabStop = false;
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.FromArgb(32, 35, 68);
-            button1.ForeColor = Color.Transparent;
-            button1.Image = Properties.Resources.chicken1;
-            button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(0, 242);
-            button1.Name = "button1";
-            button1.Size = new Size(220, 46);
-            button1.TabIndex = 6;
-            button1.Text = "Chicks";
-            button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            button2.BackColor = Color.FromArgb(32, 35, 68);
-            button2.ForeColor = Color.Transparent;
-            button2.Image = Properties.Resources.chicken1;
-            button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(3, 310);
-            button2.Name = "button2";
-            button2.Size = new Size(220, 46);
-            button2.TabIndex = 7;
-            button2.Text = "Eggs";
-            button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            button3.BackColor = Color.FromArgb(32, 35, 68);
-            button3.ForeColor = Color.Transparent;
-            button3.Image = Properties.Resources.chicken1;
-            button3.ImageAlign = ContentAlignment.MiddleLeft;
-            button3.Location = new Point(0, 377);
-            button3.Name = "button3";
-            button3.Size = new Size(220, 46);
-            button3.TabIndex = 8;
-            button3.Text = "Earnings";
-            button3.UseVisualStyleBackColor = false;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.FromArgb(205, 206, 222);
-            label2.Location = new Point(189, 12);
-            label2.Name = "label2";
-            label2.Size = new Size(64, 46);
-            label2.TabIndex = 1;
-            label2.Text = "00";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.ForeColor = Color.FromArgb(205, 206, 222);
-            label3.Location = new Point(153, 58);
-            label3.Name = "label3";
-            label3.Size = new Size(143, 25);
-            label3.TabIndex = 2;
-            label3.Text = "Total Chickens";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.ForeColor = Color.FromArgb(205, 206, 222);
-            label4.Location = new Point(140, 58);
-            label4.Name = "label4";
-            label4.Size = new Size(121, 25);
-            label4.TabIndex = 3;
-            label4.Text = "Total Chicks";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.ForeColor = Color.FromArgb(205, 206, 222);
-            label5.Location = new Point(152, 58);
-            label5.Name = "label5";
-            label5.Size = new Size(138, 25);
-            label5.TabIndex = 4;
-            label5.Text = "Total Earnings";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.ForeColor = Color.FromArgb(105, 108, 145);
-            label6.Location = new Point(96, 97);
-            label6.Name = "label6";
-            label6.Size = new Size(220, 25);
-            label6.TabIndex = 3;
-            label6.Text = "Total chickens available";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.ForeColor = Color.FromArgb(105, 108, 145);
-            label7.Location = new Point(65, 97);
-            label7.Name = "label7";
-            label7.Size = new Size(220, 25);
-            label7.TabIndex = 4;
-            label7.Text = "Total chickens available";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.ForeColor = Color.FromArgb(105, 108, 145);
-            label8.Location = new Point(70, 97);
-            label8.Name = "label8";
-            label8.Size = new Size(220, 25);
-            label8.TabIndex = 5;
-            label8.Text = "Total chickens available";
-            // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -392,7 +258,7 @@
             dataGridView1.Location = new Point(2, 3);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(1500, 586);
+            dataGridView1.Size = new Size(1500, 555);
             dataGridView1.TabIndex = 0;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
@@ -425,6 +291,141 @@
             comments.MinimumWidth = 8;
             comments.Name = "comments";
             // 
+            // panel4
+            // 
+            panel4.BackColor = Color.FromArgb(45, 49, 93);
+            panel4.Controls.Add(label6);
+            panel4.Controls.Add(label3);
+            panel4.Controls.Add(label2);
+            panel4.Controls.Add(pictureBox2);
+            panel4.Location = new Point(383, 12);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(319, 122);
+            panel4.TabIndex = 2;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.ForeColor = Color.FromArgb(105, 108, 145);
+            label6.Location = new Point(96, 97);
+            label6.Name = "label6";
+            label6.Size = new Size(220, 25);
+            label6.TabIndex = 3;
+            label6.Text = "Total chickens available";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.ForeColor = Color.FromArgb(205, 206, 222);
+            label3.Location = new Point(153, 58);
+            label3.Name = "label3";
+            label3.Size = new Size(143, 25);
+            label3.TabIndex = 2;
+            label3.Text = "Total Chickens";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.FromArgb(205, 206, 222);
+            label2.Location = new Point(189, 12);
+            label2.Name = "label2";
+            label2.Size = new Size(64, 46);
+            label2.TabIndex = 1;
+            label2.Text = "00";
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources.chicken__2_;
+            pictureBox2.Location = new Point(14, 6);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(110, 88);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 0;
+            pictureBox2.TabStop = false;
+            // 
+            // panel3
+            // 
+            panel3.BackColor = Color.FromArgb(45, 49, 93);
+            panel3.Controls.Add(label7);
+            panel3.Controls.Add(label4);
+            panel3.Controls.Add(pictureBox3);
+            panel3.Location = new Point(843, 12);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(319, 122);
+            panel3.TabIndex = 1;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.ForeColor = Color.FromArgb(105, 108, 145);
+            label7.Location = new Point(65, 97);
+            label7.Name = "label7";
+            label7.Size = new Size(220, 25);
+            label7.TabIndex = 4;
+            label7.Text = "Total chickens available";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.ForeColor = Color.FromArgb(205, 206, 222);
+            label4.Location = new Point(140, 58);
+            label4.Name = "label4";
+            label4.Size = new Size(121, 25);
+            label4.TabIndex = 3;
+            label4.Text = "Total Chicks";
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = Properties.Resources.chicken__1_;
+            pictureBox3.Location = new Point(3, 6);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(111, 91);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 1;
+            pictureBox3.TabStop = false;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.FromArgb(45, 49, 93);
+            panel2.Controls.Add(label8);
+            panel2.Controls.Add(label5);
+            panel2.Controls.Add(pictureBox4);
+            panel2.Location = new Point(1354, 12);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(319, 122);
+            panel2.TabIndex = 0;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.ForeColor = Color.FromArgb(105, 108, 145);
+            label8.Location = new Point(70, 97);
+            label8.Name = "label8";
+            label8.Size = new Size(220, 25);
+            label8.TabIndex = 5;
+            label8.Text = "Total chickens available";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.ForeColor = Color.FromArgb(205, 206, 222);
+            label5.Location = new Point(152, 58);
+            label5.Name = "label5";
+            label5.Size = new Size(138, 25);
+            label5.TabIndex = 4;
+            label5.Text = "Total Earnings";
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = Properties.Resources.earnings;
+            pictureBox4.Location = new Point(3, 6);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(111, 85);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 2;
+            pictureBox4.TabStop = false;
+            // 
             // Dashboard
             // 
             AutoScaleDimensions = new SizeF(11F, 24F);
@@ -444,16 +445,16 @@
             panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 

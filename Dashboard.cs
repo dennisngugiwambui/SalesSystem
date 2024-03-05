@@ -39,5 +39,13 @@ namespace SalesSystem
         {
 
         }
+
+        private void btnProfile_Click(object sender, EventArgs e)
+        {
+            frmProfile frmProfile = new frmProfile();
+            frmProfile.Show();
+
+            this.Hide();
+        }
     }
 }
