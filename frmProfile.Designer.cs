@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProfile));
             panel1 = new Panel();
+            panel8 = new Panel();
             panel5 = new Panel();
             buttonLogout = new Button();
             buttonEarnings = new Button();
@@ -63,7 +64,6 @@
             label1 = new Label();
             Welcome = new Label();
             pictureBox1 = new PictureBox();
-            panel8 = new Panel();
             panel1.SuspendLayout();
             panel5.SuspendLayout();
             panel2.SuspendLayout();
@@ -90,6 +90,14 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1776, 729);
             panel1.TabIndex = 0;
+            // 
+            // panel8
+            // 
+            panel8.BackColor = Color.WhiteSmoke;
+            panel8.Location = new Point(284, 164);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(1472, 559);
+            panel8.TabIndex = 7;
             // 
             // panel5
             // 
@@ -204,7 +212,7 @@
             panel2.Controls.Add(label8);
             panel2.Controls.Add(label5);
             panel2.Controls.Add(pictureBox4);
-            panel2.Location = new Point(1375, 54);
+            panel2.Location = new Point(1340, 10);
             panel2.Name = "panel2";
             panel2.Size = new Size(319, 122);
             panel2.TabIndex = 5;
@@ -245,7 +253,7 @@
             panel3.Controls.Add(label7);
             panel3.Controls.Add(label4);
             panel3.Controls.Add(pictureBox3);
-            panel3.Location = new Point(873, 48);
+            panel3.Location = new Point(839, 14);
             panel3.Name = "panel3";
             panel3.Size = new Size(319, 122);
             panel3.TabIndex = 4;
@@ -287,7 +295,7 @@
             panel4.Controls.Add(label3);
             panel4.Controls.Add(label2);
             panel4.Controls.Add(pictureBox2);
-            panel4.Location = new Point(400, 48);
+            panel4.Location = new Point(402, 14);
             panel4.Name = "panel4";
             panel4.Size = new Size(319, 122);
             panel4.TabIndex = 3;
@@ -482,14 +490,6 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
-            // 
-            // panel8
-            // 
-            panel8.BackColor = Color.WhiteSmoke;
-            panel8.Location = new Point(284, 203);
-            panel8.Name = "panel8";
-            panel8.Size = new Size(1472, 520);
-            panel8.TabIndex = 7;
             // 
             // frmProfile
             // 

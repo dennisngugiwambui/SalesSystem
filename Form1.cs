@@ -101,7 +101,7 @@ namespace SalesSystem
                 }
                 else
                 {
-                   // MessageBox.Show("Invalid Username or Password", "ACCESS DENIED", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    // MessageBox.Show("Invalid Username or Password", "ACCESS DENIED", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
                     PopupNotifier popupNotifier = new PopupNotifier();
                     popupNotifier.Image = Properties.Resources.error;
@@ -127,6 +127,12 @@ namespace SalesSystem
         }
 
         private void button2_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Exit Application", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                Application.Exit();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
         {
             if (MessageBox.Show("Exit Application", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 Application.Exit();
