@@ -136,6 +136,7 @@ namespace SalesSystem
         {
             if (MessageBox.Show("Exit Application", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 Application.Exit();
+
         }
     }
 }
