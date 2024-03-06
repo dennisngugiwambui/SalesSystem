@@ -64,7 +64,10 @@
             label1 = new Label();
             Welcome = new Label();
             pictureBox1 = new PictureBox();
+            panel9 = new Panel();
+            pictureBox5 = new PictureBox();
             panel1.SuspendLayout();
+            panel8.SuspendLayout();
             panel5.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -75,6 +78,8 @@
             panel6.SuspendLayout();
             panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -94,6 +99,7 @@
             // panel8
             // 
             panel8.BackColor = Color.WhiteSmoke;
+            panel8.Controls.Add(panel9);
             panel8.Location = new Point(284, 164);
             panel8.Name = "panel8";
             panel8.Size = new Size(1472, 559);
@@ -491,6 +497,25 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
+            // panel9
+            // 
+            panel9.BackColor = Color.FromArgb(45, 49, 93);
+            panel9.Controls.Add(pictureBox5);
+            panel9.Location = new Point(20, 22);
+            panel9.Name = "panel9";
+            panel9.Size = new Size(494, 380);
+            panel9.TabIndex = 0;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Image = Properties.Resources.profile_3135715;
+            pictureBox5.Location = new Point(81, 42);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(270, 251);
+            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox5.TabIndex = 0;
+            pictureBox5.TabStop = false;
+            // 
             // frmProfile
             // 
             AutoScaleDimensions = new SizeF(11F, 24F);
@@ -504,6 +529,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmProfile";
             panel1.ResumeLayout(false);
+            panel8.ResumeLayout(false);
             panel5.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
@@ -518,6 +544,8 @@
             panel6.PerformLayout();
             panel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ResumeLayout(false);
         }
 
@@ -558,5 +586,7 @@
         private Button buttonEarnings;
         private Button buttonLogout;
         private Panel panel8;
+        private Panel panel9;
+        private PictureBox pictureBox5;
     }
 }
