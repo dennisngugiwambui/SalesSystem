@@ -66,6 +66,12 @@
             pictureBox1 = new PictureBox();
             panel9 = new Panel();
             pictureBox5 = new PictureBox();
+            panel10 = new Panel();
+            label9 = new Label();
+            label11 = new Label();
+            label10 = new Label();
+            label12 = new Label();
+            label13 = new Label();
             panel1.SuspendLayout();
             panel8.SuspendLayout();
             panel5.SuspendLayout();
@@ -80,6 +86,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            panel10.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -99,6 +106,7 @@
             // panel8
             // 
             panel8.BackColor = Color.WhiteSmoke;
+            panel8.Controls.Add(panel10);
             panel8.Controls.Add(panel9);
             panel8.Location = new Point(284, 164);
             panel8.Name = "panel8";
@@ -516,6 +524,74 @@
             pictureBox5.TabIndex = 0;
             pictureBox5.TabStop = false;
             // 
+            // panel10
+            // 
+            panel10.BackColor = Color.FromArgb(45, 49, 93);
+            panel10.Controls.Add(label13);
+            panel10.Controls.Add(label12);
+            panel10.Controls.Add(label10);
+            panel10.Controls.Add(label11);
+            panel10.Controls.Add(label9);
+            panel10.Location = new Point(589, 22);
+            panel10.Name = "panel10";
+            panel10.Size = new Size(871, 511);
+            panel10.TabIndex = 1;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label9.ForeColor = Color.FromArgb(205, 206, 222);
+            label9.Location = new Point(22, 29);
+            label9.Name = "label9";
+            label9.Size = new Size(179, 32);
+            label9.TabIndex = 0;
+            label9.Text = "FULL NAME:";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label11.ForeColor = Color.FromArgb(205, 206, 222);
+            label11.Location = new Point(22, 108);
+            label11.Name = "label11";
+            label11.Size = new Size(106, 32);
+            label11.TabIndex = 2;
+            label11.Text = "EMAIL:";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label10.ForeColor = Color.FromArgb(205, 206, 222);
+            label10.Location = new Point(22, 186);
+            label10.Name = "label10";
+            label10.Size = new Size(122, 32);
+            label10.TabIndex = 3;
+            label10.Text = "PHONE:";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label12.ForeColor = Color.FromArgb(205, 206, 222);
+            label12.Location = new Point(22, 284);
+            label12.Name = "label12";
+            label12.Size = new Size(133, 32);
+            label12.TabIndex = 4;
+            label12.Text = "STATUS:";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label13.ForeColor = Color.FromArgb(205, 206, 222);
+            label13.Location = new Point(22, 378);
+            label13.Name = "label13";
+            label13.Size = new Size(197, 32);
+            label13.TabIndex = 5;
+            label13.Text = "PERMISSION:";
+            // 
             // frmProfile
             // 
             AutoScaleDimensions = new SizeF(11F, 24F);
@@ -546,6 +622,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            panel10.ResumeLayout(false);
+            panel10.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -588,5 +666,11 @@
         private Panel panel8;
         private Panel panel9;
         private PictureBox pictureBox5;
+        private Panel panel10;
+        private Label label13;
+        private Label label12;
+        private Label label10;
+        private Label label11;
+        private Label label9;
     }
 }
