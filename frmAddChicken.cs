@@ -16,5 +16,10 @@ namespace SalesSystem
         {
             InitializeComponent();
         }
+
+        private void buttonAddChicken_Click(object sender, EventArgs e)
+        {
+            //here now is the logic to do the insertion
+        }
     }
 }
